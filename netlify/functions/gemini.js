@@ -1,4 +1,4 @@
-const MODEL = 'gemini-2.5-flash';
+const MODEL = 'gemini-3.5-flash-lite';
 const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`;
 const headers = {'Content-Type':'application/json','Cache-Control':'no-store'};
 function reply(status,data){return {statusCode:status,headers,body:JSON.stringify(data)}}
